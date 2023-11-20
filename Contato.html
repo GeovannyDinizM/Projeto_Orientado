@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+       <head>
+    <meta charset="UTF-8">
+    <title>Contato | Projeto Orientado</title>
+    
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>Projeto Orientado</h1>
+
+        <a href="Home.html">Home</a>
+        
+        <a href="Geovanny_Diniz_Machado.html">Geovanny Diniz Machado</a>
+
+        <a href="Tabela_de_curiosidades.html">Tabela de curiosidades</a>
+
+        <a href="Sites_favoritos.html">Sites favoritos</a> 
+        
+        <a href="Contato.html">Contato</a>
+        </nav>
+        
+    </header>
+    <main>
+        <h2>Contato</h2>
+
+    <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+
+        <p>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" minlength="3" maxlength="50" required autofocus>
+        </p>
+
+        <p>
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="11987654321" minlength="10" maxlength="11" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+        </p>
+
+
+            <fieldset>
+                <legend>Qual sua preferência para retorno?</legend>
+                    <input type="checkbox" name="retorno" id="tel" value="Telefone"><label>Telefone</label>
+                    <input type="checkbox" name="retorno" id="e_mail" value="E_mail"><label for="e_mail">E-mail</label>
+                    <input type="checkbox" name="retorno" id="indiferente" value="Indiferente"><label for="indiferente">Indiferente</label>
+
+
+            </fieldset>
+
+        <p>
+            <label for="motivo_do_contato">Selecione uma opção:</label><br>
+            <select name="motivo_do_contato" id="motivo_do_contato">
+                <option>Escolha...</option>
+                <option>Solicitação</option>
+                <option>Dúvidas</option>
+                <option>Sugestões</option>
+                <option>Elogio</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="Mensagem" id="msg" minlength="10" rows="7" cols="36" required></textarea><br>
+
+                <button>Enviar</button>
+            </form>
+        </main>
+        </body>
+</html>

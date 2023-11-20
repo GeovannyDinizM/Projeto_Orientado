@@ -1,0 +1,110 @@
+/* 5 novas propriedades
+
+1-Utilizei o id para acresentar um ícone na minha lista desordenada de sites favoritos usando na folha de estilo: list-style-image
+
+2- Utilizei o <figure> junto com o <figcaption> para incluir um pequena leganda nas minhas fotos no projeto.
+
+3- utilizei header e main para indicar o cabeçalho e parte principal da minha página.
+
+4- utilizei display no css para harmonizar titulo e menu
+
+5- Não consegui aplicar uma quinta propriedade.  ='(
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=PT+Serif&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    background-image: url(../imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+figcaption {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, sans-serif;
+    background-color: rgb(104, 102, 107);
+    font-style: italic;
+    width: 280px;
+    margin: auto;    
+}
+
+a {
+    color: white;
+    margin: auto;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+td:hover {
+    color: black;
+    background-color: white;
+}
+
+table {
+    margin: auto;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 15px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+th {    background-color: blue;
+        color: black;
+        text-align: left;
+}
+
+
+fieldset {
+    margin: auto;
+    width: 290px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Cinzel1', serif;
+
+}
+
+h2 {
+    font-family: 'Cinzel1', serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Cinzel1', serif;
+}
+
+ul {
+    list-style-position: inside;
+    padding-right: 50px;
+}
+
+#canaltech {
+    list-style-image: url(../imagens/icon_canaltech.png)
+}
+#tecmundo {
+    list-style-image: url(../imagens/icon_tecmundo.png)
+}
+#g1 {
+    list-style-image: url(../imagens/icon_g1.png);
+}
+
+nav {
+    display: flex;
+    margin: auto;
+}
